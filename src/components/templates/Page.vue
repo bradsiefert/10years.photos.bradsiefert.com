@@ -25,26 +25,14 @@
         </div>
       </div>
     </div>
-
-    <footer-block :next="next" :previous="previous"/>
   </main>
 </template>
 
 <script>
-import FooterBlock from '@/components/blocks/FooterBlock';
-
 export default {
-  components: {
-    FooterBlock,
-  },
   props: {
     previous: String,
     next: String,
-  },
-  data() {
-    return {
-      content: {},
-    };
   },
   created() {
     this.content = this.findMetaByRoute(this.$route.path);
@@ -58,15 +46,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  .figure {
-    max-height: 100%;
-  }
-  .figure > .figure-img {
-    max-width: 100%;
-    max-height: calc(100vh - 8rem - 0.5rem - 17px);
-    height: auto;
-    width: auto;
-  }
-</style>

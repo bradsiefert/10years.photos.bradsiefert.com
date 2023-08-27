@@ -42,17 +42,11 @@
         </div>
       </div>
     </div>
-    <footer-block :next="next" :previous="previous"/>
   </main>
 </template>
 
 <script>
-import FooterBlock from '@/components/blocks/FooterBlock';
-
 export default {
-  components: {
-    FooterBlock,
-  },
   props: {
     previous: String,
     next: String,

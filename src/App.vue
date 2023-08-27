@@ -4,16 +4,18 @@
     <transition name="fade">
       <router-view :key="$route.fullPath" :next="next" :previous="previous"/>
     </transition>
+    <footer-block :next="next" :previous="previous"/>
   </div>
 </template>
 
 <script>
 import NavbarBlock from '@/components/blocks/NavbarBlock';
+import FooterBlock from '@/components/blocks/FooterBlock';
 
 export default {
   name: 'App',
   components: {
-    NavbarBlock,
+    NavbarBlock, FooterBlock,
   },
   data() {
     return {

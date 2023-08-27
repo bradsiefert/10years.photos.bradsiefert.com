@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="contents">
     <div class="container mt-4 mb-3">
       <div class="row">
         <div class="col-lg-11">
@@ -255,18 +255,11 @@
         </div>
       </div>
     </div>
-
-    <footer-block :next="next" :previous="previous"/>
   </main>
 </template>
 
 <script>
-import FooterBlock from '@/components/blocks/FooterBlock';
-
 export default {
-  components: {
-    FooterBlock,
-  },
   props: {
     previous: String,
     next: String,
