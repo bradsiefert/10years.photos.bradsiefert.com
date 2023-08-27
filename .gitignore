@@ -13,3 +13,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 /config.codekit3
+.nova/Configuration.json
