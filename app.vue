@@ -1,9 +1,12 @@
 <template>
+  <header>
+    <navbar />
+  </header>
   <main>
     <NuxtPage/>
-    <h1>hyoooo</h1>
-    testing
   </main>
+
+  <footie />
 </template>
 
 <script setup lang="ts">
