@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       viewTransition: true
     },
     css: [
-      //'@/assets/scss/styles.scss'
+      '@/assets/scss/app.scss'
       // Needed to install sass and bootstrap to make this work.
     ]
   })
