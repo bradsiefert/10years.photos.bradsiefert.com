@@ -24,7 +24,7 @@
             &nbsp;
           </div>
 
-          <NuxtLink class="nav-link" to="/toc">Table of Contents</NuxtLink>
+          <NuxtLink class="nav-link" to="/tableofcontents">Table of Contents</NuxtLink>
 
           <NuxtLink class="nav-link" v-if="next !== null" :to="next">
             Next <i class="ion-chevron-right"></i>
