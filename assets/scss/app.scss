@@ -46,8 +46,10 @@ $modal-md:                          480px !default;
 $modal-sm:                          320px !default;
 
 /* ---------- Importin' --------- */
+//@import "variables.scss";
 @import "bootstrap";
 @import "fontfaces.scss";
+@import "darkmode.scss";
 
 /* ---------- Page Transitions --------- */
 .fade-enter-active,
