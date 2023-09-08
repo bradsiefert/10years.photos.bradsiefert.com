@@ -14,7 +14,7 @@
       <i class="ion-chevron-left"></i> Prev
     </router-link>-->
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <nav class="navbar navbar-expand">
         <div class="container">
           <NuxtLink class="nav-link" v-if="previous !== null" :to="previous">
@@ -34,7 +34,7 @@
           </div>
         </div>
       </nav>
-    </footer>
+    </footer>-->
   </div>
 </template>
 
