@@ -1,16 +1,26 @@
 <template>
   <footer class="footer">
-    <nav class="navbar navbar-expand">
-      <div class="container ps-sm-0 pe-sm-0">
-        <NuxtLink class="nav-link">Prev</NuxtLink>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <NuxtLink  class="nav-link" v-if="prev" :to="prev._path">Prev</NuxtLink>
+          </div>
 
-        <NuxtLink class="nav-link" to="/tableofcontents">
-          Table of Contents
-        </NuxtLink>
+          <div class="col">
+            <NuxtLink class="nav-link" to="/tableofcontents">
+              Table of Contents
+            </NuxtLink>
+          </div>
 
-        <NuxtLink class="nav-link">Next</NuxtLink>
+          <div class="col">
+            <NuxtLink class="nav-link" v-if="next" :to="next._path">Next</NuxtLink>
+          </div>
+        </div>
+
       </div>
-    </nav>
   </footer>
 </template>
 
+<script setup lang="ts">
+const { prev, next, navigation } = useContent()
+</script>
