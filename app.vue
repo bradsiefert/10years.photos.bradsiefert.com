@@ -4,6 +4,7 @@
   </header>
 
   <main>
+    <NuxtLoadingIndicator />
     <NuxtPage/>
   </main>
 
