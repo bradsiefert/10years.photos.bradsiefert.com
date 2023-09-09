@@ -80,7 +80,7 @@ body {
   font-style: normal;
   background-color: $white;
   position: relative;
-  font-size: 1.125rem;
+  color: #121212;
 }
 
 main {
@@ -89,7 +89,7 @@ main {
   left: 0;
   right: 0;
   min-height: calc(100vh - 64px);
-  padding-bottom: 48px;
+  padding: 0 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,10 +103,19 @@ main {
   min-height: 64px;
 }
 
+.navbar.top {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 64px; /* Set the fixed height of the footer here */
+}
+
 .navbar-brand {
   font-size: 16px;
   font-weight: 800;
-  color: #333333;
   letter-spacing: 0.28px;
   text-align: center;
   text-transform: uppercase;
@@ -147,6 +156,7 @@ footer .navbar-expand {
 }
 
 footer .nav-link {
+  cursor: pointer;
   padding: 0 40px;
   border-left: 1px solid #f5f5f5;
   border-right: 1px solid #f5f5f5;
@@ -177,7 +187,6 @@ footer .nav-link:hover {
   .width-contain {
     width: 100%;
     min-width: 100%;
-    padding: 0 1rem;
   }
 }
 
@@ -186,80 +195,74 @@ footer .nav-link:hover {
   margin: 0 auto;
   max-height: calc(100vh - 240px);
   max-width: 100%;
+  min-height: 600px;
   width: auto;
   height: auto;
 }
 
 .details {
   font-family: 'SFM';
-  font-size: .6875rem;
+  font-size: 0.8125rem;
   margin-top: 8px;
-  width: 100%;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
 }
 
 @media (max-width: 767px) {
-    .details .col-md:nth-of-type(1),
-    .details .col-md:nth-of-type(2),
-    .details .col-md:nth-of-type(3) {
-        text-align: center;
-        margin-bottom: 8px;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .details .col-md:nth-of-type(1),
+  .details .col-md:nth-of-type(2),
+  .details .col-md:nth-of-type(3) {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
-    .details .col-md:nth-of-type(1) {
-        text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .details .col-md:nth-of-type(1) {
+    text-align: left;
+    padding: 0;
+  }
 
-    .details .col-md:nth-of-type(2) {
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .details .col-md:nth-of-type(2) {
+    text-align: center;
+    padding: 0;
+  }
 
-    .details .col-md:nth-of-type(3) {
-        text-align: right;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .details .col-md:nth-of-type(3) {
+    text-align: right;
+    padding: 0;
+  }
 }
 
 @media (min-width: 769px) {
-    .details .col-lg:nth-of-type(1) {
-        text-align: left;
-    }
+  .details .col-lg:nth-of-type(1) {
+    text-align: left;
+  }
 
-    .details .col-lg:nth-of-type(2) {
-        text-align: center;
-    }
+  .details .col-lg:nth-of-type(2) {
+    text-align: center;
+  }
 
-    .details .col-lg:nth-of-type(3) {
-        text-align: right;
-    }
+  .details .col-lg:nth-of-type(3) {
+    text-align: right;
+  }
 }
 
-.mobile-next,
-.mobile-prev {
-    display: none;
+.mobile-next, .mobile-prev {
+  display: none;
 }
 
 /* ---------- Text pages --------- */
-.text-block {
-  align-items: normal;
-  padding: 3rem 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'SFM';
   font-weight: normal;
 }
 
-h2 {
+h1, .h1 {
+  font-size: 1.5rem;
+}
+
+h2, .h2 {
   font-size: 1.5rem;
 }
 
@@ -268,13 +271,16 @@ h3 {
   font-weight: 600;
 }
 
-.text-block,
-.text-block p, {
+.text-block {
+  align-items: normal;
+  padding: 1rem 0;
+}
+
+.text-block, .text-block p, {
   font-size: 1.25rem;
-  color: #333333;
   letter-spacing: 0.3px;
-  text-align: justify;
-  line-height: 1.4;
+  line-height: 1.375;
+  //text-align: justify;
 }
 
 .text-block .cite {
@@ -285,8 +291,8 @@ h3 {
 
 @media (max-width: 767px) {
   .text-block {
-      font-size: 1.2rem;
-      line-height: 1.35;
+    font-size: 1.2rem;
+    line-height: 1.35;
   }
 }
 

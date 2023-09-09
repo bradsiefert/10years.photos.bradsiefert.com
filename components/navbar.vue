@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar justify-content-center">
-    <div class="container pl-0 pr-0">
+  <nav class="navbar top">
+    <div class="container">
       <div class="navbar-brand d-none d-sm-block">
         <a class="nav-link" target="_blank" href="http://bradsiefert.com">
           Brad Siefert
