@@ -24,9 +24,9 @@ $black:    #121212 !default;
 $white: #fff;
 $blue: #4EA1D3;
 $red: #EC4964;
-$link-color:                        $gray-800;
+$link-color:                        $black;
 
-$navbar-light-color:                $gray-800;
+$navbar-light-color:                $black;
 $navbar-light-hover-color:          $link-color;
 $navbar-light-active-color:         $link-color;
 $navbar-light-disabled-color:       rgba($gray-800, .3);
@@ -35,15 +35,6 @@ $navbar-light-toggler-border-color: transparent;
 $btn-border-radius:                 4px !default;
 $btn-border-radius-lg:              4px !default;
 $btn-border-radius-sm:              2px !default;
-
-$modal-content-border-color:        transparent !default;
-$modal-backdrop-bg:                 $gray-800 !default;
-$modal-backdrop-opacity:            .8 !default;
-$modal-inner-padding:               1.5rem !default;
-$modal-header-padding:              1.5rem !default;
-$modal-lg:                          960px !default;
-$modal-md:                          480px !default;
-$modal-sm:                          320px !default;
 
 /* ---------- Importin' --------- */
 //@import "variables.scss";
@@ -60,15 +51,6 @@ $modal-sm:                          320px !default;
 }
 .fade-leave, .fade-enter-to {
   opacity: 1;
-}
-
-/* ---------- Stylin' --------- */
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 body {
@@ -91,6 +73,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.document-driven-page {
+  width: 100%;
 }
 
 /* ---------- Navbar --------- */
@@ -176,6 +162,10 @@ footer .nav-link:hover {
 .width-contain {
   width: 100%;
   min-width: 640px;
+
+  // Remove these if you fix the document-driven-page 100% thing
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -235,6 +225,14 @@ footer .nav-link:hover {
 }
 
 /* ---------- Text Pages --------- */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'SFM';
   font-weight: normal;
@@ -278,7 +276,7 @@ h3 {
 }
 
 ol.toc {
-  padding-left: 3.5rem;
+  padding-left: 2.5rem;
 }
 
 // Responsive Typography
