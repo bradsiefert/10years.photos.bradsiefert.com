@@ -2,7 +2,7 @@
   <nav class="navbar top">
     <div class="container">
       <div class="navbar-brand d-none d-sm-block">
-        <a class="nav-link" target="_blank" href="http://bradsiefert.com">
+        <a class="nav-link" target="_blank" href="https://bradsiefert.com">
           Brad Siefert
         </a>
       </div>
@@ -12,7 +12,7 @@
         </NuxtLink>
       </div>
       <div class="d-none d-sm-block ml-auto">
-        <a class="nav-link" target="_blank" href="http://photos.bradsiefert.com">
+        <a class="nav-link" target="_blank" href="https://photos.bradsiefert.com">
           <img
             width="32"
             src="@/assets/images/bks-camera.png"
