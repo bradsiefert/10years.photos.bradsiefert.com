@@ -1,22 +1,19 @@
 <script setup lang="ts">
-definePageMeta({
-  documentDriven: false
-})
 useHead({
   title: 'Home'
 })
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 col-lg-10 m-auto">
-        <img
-          src="photos/intro.jpg"
-          class="img-fluid"
-          alt="2007 to 2017, 10 Years of Photos, Brad Siefert"
-        >
-      </div>
-    </div>
-  </div>
+  <ContentDoc v-slot="{ doc }">
+    <ContentRenderer :value="doc">
+      <template #not-found>
+        <p>Oh no! 404 Error. Document not found.</p>
+      </template>
+
+      <template #empty>
+        <p>Loading...</p>
+      </template>
+    </ContentRenderer>
+  </ContentDoc>
 </template>
