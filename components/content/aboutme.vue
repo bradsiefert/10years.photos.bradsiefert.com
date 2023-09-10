@@ -20,9 +20,9 @@
               <div class="details">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md date-time">2015/05/28 8:00pm</div>
-                    <div class="col-md photo-metadata">35mm f/4 1/180th 200 ISO</div>
-                    <div class="col-md gps-location">41°55’49” N 87°42’23” W</div>
+                    <div class="col-md">2015/05/28 8:00pm</div>
+                    <div class="col-md">35mm f/4 1/180th 200 ISO</div>
+                    <div class="col-md">41°55’49” N 87°42’23” W</div>
                   </div>
                 </div>
               </div>
