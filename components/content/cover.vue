@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-10 col-lg-10 m-auto">
+      <div class="col-12">
         <img
-          src="photos/intro.jpg"
+          src="/intro.jpg"
           class="img-fluid"
           alt="2007 to 2017, 10 Years of Photos, Brad Siefert"
         >
