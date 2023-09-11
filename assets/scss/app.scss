@@ -75,10 +75,6 @@ main {
   flex-direction: column;
 }
 
-.document-driven-page {
-  width: 100%;
-}
-
 /* ---------- Navbar --------- */
 .navbar {
   background-color: $white;
@@ -159,35 +155,13 @@ footer .nav-link:hover {
 }
 
 /* ---------- Photo Pages --------- */
-.width-contain {
-  width: 100%;
-  min-width: 640px;
-
-  // Remove these if you fix the document-driven-page 100% thing
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .width-contain {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .photo {
-    min-height: 600px;
-  }
-}
-
 .photo img {
-  display: block;
-  margin: 0 auto;
   max-height: calc(100vh - 240px);
+  display: block;
   max-width: 100%;
-  width: auto;
-  height: auto;
+  //margin: 0 auto;
+  //width: auto;
+  //height: auto;
 }
 
 .details {
@@ -269,14 +243,23 @@ h3 {
   font-family: 'SFM';
 }
 
+.toc-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 8rem auto;
+}
+
 .toc {
   font-feature-settings: "tnum";
   list-style-type: decimal-leading-zero;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 ol.toc {
-  padding-left: 2.5rem;
+  padding-left: 2.125rem;
 }
 
 // Responsive Typography
