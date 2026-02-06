@@ -17,5 +17,18 @@ app: {
   css: [
     '@/assets/scss/app.scss'
     // Needed to install sass and bootstrap to make this work.
-  ]
+  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          quietDeps: true,
+          silenceDeprecations: ['legacy-js-api'],
+          logger: {
+            warn: () => {} // Suppress all warnings including deprecations
+          }
+        }
+      }
+    }
+  }
 })
