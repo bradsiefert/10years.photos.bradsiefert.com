@@ -139,6 +139,7 @@ footer .nav-link {
   padding: 0 48px;
   min-width: 144px;
   text-align: center;
+  text-decoration: none !important;
 }
 
 @media (max-width: 767px) {
@@ -213,7 +214,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
 h2, .h2 {
@@ -243,22 +245,27 @@ h3 {
 }
 
 .toc-wrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 8rem auto;
+  padding: 3rem 0 6rem;
+}
+
+.toc-column {
+  padding: 0 1.5rem;
 }
 
 .toc {
   font-feature-settings: "tnum";
-  list-style-type: decimal-leading-zero;
+  list-style: none;
   font-size: 1.25rem;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-ol.toc {
-  padding-left: 2.125rem;
+.toc-section {
+  margin-top: 1.75rem;
+  
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 // Responsive Typography
@@ -277,5 +284,9 @@ ol.toc {
 
   .navbar-brand {
     font-size: 1rem;
+  }
+  
+  .toc-column {
+    padding: 0 1rem;
   }
 }
