@@ -5,7 +5,7 @@
 
   <main>
     <NuxtLoadingIndicator />
-    <NuxtPage/>
+    <NuxtPage />
   </main>
 
   <footie />
