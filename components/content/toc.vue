@@ -39,16 +39,16 @@
             <li><NuxtLink to="/places/35">35 The Milky Way at Delicate Arch</NuxtLink></li>
             <li><NuxtLink to="/places/36">36 Light painting the Rabbit Island sign</NuxtLink></li>
             <li><NuxtLink to="/places/37">37 The Northern Lights dancing around at Rabbit Island</NuxtLink></li>
-            <li class="toc-section"><strong><NuxtLink to="/4/people/38">38 People</NuxtLink></strong></li>
-            <li><NuxtLink to="/4/people/39">39 Waiting on the Green Line</NuxtLink></li>
-            <li><NuxtLink to="/4/people/40">40 Riding the swings with some of my best friends at Navy Pier</NuxtLink></li>
+            <li class="toc-section"><strong><NuxtLink to="/people/38">38 People</NuxtLink></strong></li>
+            <li><NuxtLink to="/people/39">39 Waiting on the Green Line</NuxtLink></li>
+            <li><NuxtLink to="/people/40">40 Riding the swings with some of my best friends at Navy Pier</NuxtLink></li>
           </ul>
         </div>
       </div>
       <div class="col-lg-6 toc-column">
         <div class="text-block pt-0 pb-0">
           <ul class="toc mb-0">
-            <li><NuxtLink to="/4/people/41">41 Surfer does a backflip cliff jump</NuxtLink></li>
+            <li><NuxtLink to="/people/41">41 Surfer does a backflip cliff jump</NuxtLink></li>
             <li><NuxtLink to="/people/42">42 Double exposure portrait of Jon</NuxtLink></li>
             <li><NuxtLink to="/people/43">43 Goodbye portrait of Buth leaving Rabbit Island</NuxtLink></li>
             <li><NuxtLink to="/people/44">44 Stylized portrait of Esther at 63rd Street Beach</NuxtLink></li>
@@ -69,9 +69,9 @@
             <li><NuxtLink to="/people/59">59 Portrait of Jimmy in studio</NuxtLink></li>
             <li><NuxtLink to="/people/60">60 Portrait of Charity while apple picking</NuxtLink></li>
             <li><NuxtLink to="/people/61">61 Studio portrait of my first pet, my bearded dragon Richard Parker</NuxtLink></li>
-            <li class="toc-section"><strong><NuxtLink to="/5/instantfilm/62">62 Instant Film</NuxtLink></strong></li>
-            <li><NuxtLink to="/5/instantfilm/63">63 Portrait of Will at the Logan Square mural</NuxtLink></li>
-            <li><NuxtLink to="/5/instantfilm/64">64 Double exposure Polaroid portrait of The 83rd</NuxtLink></li>
+            <li class="toc-section"><strong><NuxtLink to="/instantfilm/62">62 Instant Film</NuxtLink></strong></li>
+            <li><NuxtLink to="/instantfilm/63">63 Portrait of Will at the Logan Square mural</NuxtLink></li>
+            <li><NuxtLink to="/instantfilm/64">64 Double exposure Polaroid portrait of The 83rd</NuxtLink></li>
             <li><NuxtLink to="/instantfilm/65">65 Double exposure Polaroid portrait of Abbi Rajasekhar</NuxtLink></li>
             <li><NuxtLink to="/instantfilm/66">66 Double exposure Polaroid of Anthony at the Wolfpack retreat</NuxtLink></li>
             <li><NuxtLink to="/instantfilm/67">67 Double exposure Polaroid of Josh at the Wolfpack retreat</NuxtLink></li>
