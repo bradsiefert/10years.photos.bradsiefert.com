@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-02-06',
   devtools: { enabled: true },
 app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1'

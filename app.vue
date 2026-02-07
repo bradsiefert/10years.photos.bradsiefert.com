@@ -24,4 +24,5 @@
     ogImage: 'https://10years.photos.bradsiefert.com/sharing.jpg',
     twitterCard: 'summary_large_image'
   })
+
 </script>
