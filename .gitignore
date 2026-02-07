@@ -23,3 +23,6 @@ logs
 .env.*
 !.env.example
 .nova/Configuration.json
+
+# Local Netlify folder
+.netlify
