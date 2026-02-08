@@ -1,0 +1,292 @@
+/* ---------- Bradstrap v4 Global Updates --------- */
+// 8pt Grid System
+$grid-gutter-width:     32px !default;
+$container-max-widths:  (sm: 544px, md: 736px, lg: 960px, xl: 1168px) !default;
+
+// 8pt Spacers Extended
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+0: 0,
+1: ($spacer * .25), 2: ($spacer * .5),   3: ($spacer * 1),  4: ($spacer * 1.5),
+5: ($spacer * 2),   6: ($spacer * 2.5),  7: ($spacer * 3),  8: ($spacer * 3.5),
+9: ($spacer * 4),  10: ($spacer * 4.5), 11: ($spacer * 5), 12: ($spacer * 6)
+), $spacers);
+
+// Updating Base Colors (I don't believe in false greys.)
+$white:    #fff !default;
+$gray-100: #f8f8f8 !default; $gray-200: #eeeeee !default; $gray-300: #dddddd !default;
+$gray-400: #cccccc !default; $gray-500: #555555 !default; $gray-600: #666666 !default;
+$gray-700: #555555 !default; $gray-800: #333333 !default; $gray-900: #212121 !default;
+$black:    #121212 !default;
+
+/* ---------- Site Specific Variables Updates --------- */
+$white: #fff;
+$blue: #4EA1D3;
+$red: #EC4964;
+$link-color:                        $black;
+
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          $link-color;
+$navbar-light-active-color:         $link-color;
+$navbar-light-disabled-color:       rgba($gray-800, .3);
+$navbar-light-toggler-border-color: transparent;
+
+$btn-border-radius:                 4px !default;
+$btn-border-radius-lg:              4px !default;
+$btn-border-radius-sm:              2px !default;
+
+/* ---------- Importin' --------- */
+@import "bootstrap";
+@import "fontfaces.scss";
+//@import "darkmode.scss";
+
+/* ---------- Page Transitions --------- */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+body {
+  font-family: 'T-Pro';
+  font-weight: 400;
+  font-style: normal;
+  background-color: $white;
+  position: relative;
+  color: $black;
+}
+
+main {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  min-height: calc(100vh - 64px);
+  padding: 0 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ---------- Navbar --------- */
+.navbar {
+  background-color: $white;
+  border-bottom: 1px solid $gray-300;
+  min-height: 64px;
+}
+
+.navbar.top {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 64px; /* Set the fixed height of the footer here */
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- Footer --------- */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 64px; /* Set the fixed height of the footer here */
+  line-height: 64px; /* Vertically center the text there */
+  font-family: 'SFM';
+  font-size: 1rem;
+  letter-spacing: -0.02rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  border-top: 1px solid $gray-200;
+  overflow: hidden;
+}
+
+footer .navbar {
+  min-height: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+footer .navbar-expand {
+  border: 0;
+}
+
+footer .nav-link {
+  cursor: pointer;
+  padding: 0 48px;
+  min-width: 144px;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  footer .nav-link {
+    min-width: 72px;
+    padding: 0 16px;
+    border: 0;
+  }
+}
+
+footer .nav-link:hover {
+  background-color: rgba(240,240,240,0.9);
+  transition: 0.6s;
+}
+
+/* ---------- Photo Pages --------- */
+.photo img {
+  max-height: calc(100vh - 240px);
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+.details {
+  font-family: 'SFM';
+  font-size: 0.875rem;
+  margin-top: 8px;
+  letter-spacing: -0.25px;
+}
+
+@media (max-width: 767px) {
+  .details .col-md:nth-of-type(1),
+  .details .col-md:nth-of-type(2),
+  .details .col-md:nth-of-type(3) {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .details .col-md:nth-of-type(1) {
+    text-align: left;
+    padding: 0;
+  }
+
+  .details .col-md:nth-of-type(2) {
+    text-align: center;
+    padding: 0;
+  }
+
+  .details .col-md:nth-of-type(3) {
+    text-align: right;
+    padding: 0;
+  }
+}
+
+/* ---------- Text Pages --------- */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SFM';
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text-block {
+  padding: 1rem 0;
+  line-break: pretty;
+}
+
+.text-block, .text-block p {
+  font-size: 1.375rem;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+  line-break: pretty;
+}
+
+.text-block .cite {
+  font-size: 1.125rem;
+  text-align: right;
+  font-family: 'SFM';
+}
+
+.toc-wrap {
+  padding: 3rem 0 6rem;
+}
+
+.toc-column {
+  padding: 0 1.5rem;
+}
+
+.toc {
+  font-feature-settings: "tnum";
+  list-style: none;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.toc-section {
+  margin-top: 1.75rem;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// Responsive Typography
+@media (max-width: 767px) {
+  .details {
+    font-size: 1.125rem;
+  }
+
+  .text-block {
+    padding: 3rem 0;
+  }
+
+  .text-block, .text-block p {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  .toc-column {
+    padding: 0 1rem;
+  }
+}
