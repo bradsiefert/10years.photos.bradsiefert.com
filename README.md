@@ -1,21 +1,62 @@
-# 10 Year Photobook
+# 10years.photos.bradsiefert.com Site Setup
 
-> Brad Siefert's 10 Year Photobook
+Framework: Nuxt 3
+Read the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Build Setup
+## Setup
+Make sure to install the dependencies:
 
-``` bash
-# install dependencies
+```bash
+# npm
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# pnpm
+pnpm install
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# yarn
+yarn install
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Development Server
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+```
+
+## Production
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+```
+
+## Preview
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
