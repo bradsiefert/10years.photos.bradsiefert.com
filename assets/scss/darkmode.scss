@@ -4,21 +4,23 @@ body a,
 body main,
 body .navbar,
 body .navbar-brand a,
-body .navbar .nav-link,
-body .navbar .theme-toggle,
 body .navbar-logo,
-body .footer,
-body footer .nav-link {
+body .footer {
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
     border-color 0.3s ease,
-    box-shadow 0.3s ease,
-    filter 0.3s ease;
+    box-shadow 0.3s ease;
+}
+
+.navbar .theme-toggle,
+footer .nav-link {
+  transition: none;
+  /* No color/background transition on theme switch (Bootstrap .nav-link would otherwise ease through gray) */
 }
 
 /* ---------- Dark Mode Styles --------- */
-body[dark-mode] {
+body[data-theme="dark"] {
   color: #fff;
   background-color: #121212;
 
@@ -61,5 +63,12 @@ body[dark-mode] {
 
   footer .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Dark mode focus styles */
+  a:focus-visible,
+  button:focus-visible,
+  .nav-link:focus-visible {
+    outline-color: $blue;
   }
 }

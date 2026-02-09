@@ -263,6 +263,15 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---------- Focus Styles --------- */
+a:focus-visible,
+button:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid $blue;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'SFM';
   font-weight: normal;

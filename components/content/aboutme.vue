@@ -16,13 +16,13 @@
               <p>
                 I spend my days designing web and mobile apps, but an incredible part of my time and energy is focused on being a better photographer. Learning the fundamentals of photography took me a very long time before it clicked for me. From that time, I have been driven to learn more and more about how to make great images and how to tell small stories with those images. I am married to a wonderful woman, Nicole, who never complains or shames me when I want to take photos. For that, I am incredibly grateful.
               </p>
-              <h3 class="text-center text-sm-center text-md-start">Self Portrait</h3>
+              <div class="h3 text-center text-sm-center text-md-start">Selfff Portrait</div>
               <div class="details">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md">2015/05/28 8:00pm</div>
-                    <div class="col-md">35mm f/4 1/180th 200 ISO</div>
-                    <div class="col-md">41°55’49” N 87°42’23” W</div>
+                    <div class="col-md" aria-label="Date taken">2015/05/28 8:00pm</div>
+                    <div class="col-md" aria-label="Camera settings">35mm f/4 1/180th 200 ISO</div>
+                    <div class="col-md" aria-label="Location">41°55’49” N 87°42’23” W</div>
                   </div>
                 </div>
               </div>

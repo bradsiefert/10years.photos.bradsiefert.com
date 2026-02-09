@@ -13,6 +13,7 @@
       "dependencies": [
         "npm:@nuxt/content@~2.13.4",
         "npm:@nuxt/devtools@latest",
+        "npm:@phosphor-icons/vue@^2.2.1",
         "npm:bootstrap@^5.3.1",
         "npm:nuxt@^3.17.0",
         "npm:sass@^1.66.1"

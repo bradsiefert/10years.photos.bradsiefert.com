@@ -15,9 +15,9 @@
     <div class="details">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md">{{ doc.details.date }}</div>
-          <div class="col-md">{{ doc.details.settings }}</div>
-          <div class="col-md">{{ doc.details.location }}</div>
+          <div class="col-md" aria-label="Date taken">{{ doc.details.date }}</div>
+          <div class="col-md" aria-label="Camera settings">{{ doc.details.settings }}</div>
+          <div class="col-md" aria-label="Location">{{ doc.details.location }}</div>
         </div>
       </div>
     </div>

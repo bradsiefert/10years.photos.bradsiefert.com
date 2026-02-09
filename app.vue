@@ -1,9 +1,10 @@
 <template>
   <header>
+    <a href="#main-content" class="visually-hidden-focusable">Skip to content</a>
     <navbar />
   </header>
 
-  <main>
+  <main id="main-content">
     <NuxtLoadingIndicator />
     <NuxtPage />
   </main>

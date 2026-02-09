@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar top">
+  <nav class="navbar top" aria-label="Main navigation">
     <div class="container d-flex align-items-center">
       <div class="navbar-brand">
-        <a class="nav-link d-flex align-items-center gap-2" target="_blank" href="https://photos.bradsiefert.com">
+        <a class="nav-link d-flex align-items-center gap-2" target="_blank" rel="noopener noreferrer" href="https://photos.bradsiefert.com" aria-label="Brad Siefert (opens in new tab)">
           <img
             width="32"
             src="@/assets/images/bks-camera.png"
@@ -42,9 +42,11 @@ const isDark = ref(false)
 function applyTheme(dark: boolean) {
   if (import.meta.client) {
     if (dark) {
-      document.body.setAttribute('dark-mode', '')
+      document.body.setAttribute('data-theme', 'dark')
+      document.documentElement.style.colorScheme = 'dark'
     } else {
-      document.body.removeAttribute('dark-mode')
+      document.body.removeAttribute('data-theme')
+      document.documentElement.style.colorScheme = 'light'
     }
   }
 }
@@ -68,6 +70,9 @@ onMounted(() => {
     } else if (stored === 'light') {
       isDark.value = false
       applyTheme(false)
+    } else {
+      // Set initial colorScheme based on system preference if no stored preference
+      document.documentElement.style.colorScheme = 'light'
     }
   } catch (_) {}
 })

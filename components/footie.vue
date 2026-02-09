@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
-    <nav class="navbar navbar-expand">
+    <nav class="navbar navbar-expand" aria-label="Page navigation">
       <div class="container">
         <div class="float-start">
-          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="prev" :to="prev._path">
+          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="prev" :to="prev._path" :aria-label="'Previous: ' + prev.title">
             <PhArrowLeft :size="24" />
             Prev
           </NuxtLink>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="float-end">
-          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="next" :to="next._path">
+          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="next" :to="next._path" :aria-label="'Next: ' + next.title">
             Next
             <PhArrowRight :size="24" />
           </NuxtLink>
