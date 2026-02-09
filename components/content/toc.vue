@@ -1,9 +1,9 @@
 <template>
   <div class="container toc-wrap">
     <div class="row">
-      <div class="col-lg-6 toc-column">
+      <div class="col-lg-6">
         <h1 class="mb-4">Table of Contents</h1>
-        <div class="text-block pt-0 pb-0">
+        <div class="text-block">
           <ul class="toc mb-0">
             <li><strong><NuxtLink to="/about/02">02 About Me</NuxtLink></strong></li>
             <li><strong><NuxtLink to="/about/03">03 Ten Years In</NuxtLink></strong></li>
@@ -45,8 +45,8 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-6 toc-column">
-        <div class="text-block pt-0 pb-0">
+      <div class="col-lg-6">
+        <div class="text-block">
           <ul class="toc mb-0">
             <li><NuxtLink to="/people/41">41 Surfer does a backflip cliff jump</NuxtLink></li>
             <li><NuxtLink to="/people/42">42 Double exposure portrait of Jon</NuxtLink></li>
