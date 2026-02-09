@@ -1,23 +1,14 @@
 <template>
   <nav class="navbar top">
-    <div class="container">
-      <div class="navbar-brand d-none d-sm-block">
-        <a class="nav-link" target="_blank" href="https://bradsiefert.com">
-          Brad Siefert
-        </a>
-      </div>
-      <div class="abs-center-x">
-        <NuxtLink to="/">
-          <img src="@/assets/images/logo.svg" alt="10 Years of Photos, 2007 - 2017">
-        </NuxtLink>
-      </div>
-      <div class="d-none d-sm-block ml-auto">
-        <a class="nav-link" target="_blank" href="https://photos.bradsiefert.com">
+    <div class="container d-flex align-items-center">
+      <div class="navbar-brand">
+        <a class="nav-link d-flex align-items-center gap-2" target="_blank" href="https://photos.bradsiefert.com">
           <img
             width="32"
             src="@/assets/images/bks-camera.png"
             alt="Brad Siefert camera illustration logo"
           >
+          <span class="d-none d-md-inline">Brad Siefert</span>
         </a>
       </div>
       <div class="abs-center-x">
