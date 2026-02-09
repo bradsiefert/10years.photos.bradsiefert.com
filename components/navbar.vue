@@ -25,7 +25,7 @@
         >
           <span class="d-none d-md-inline">{{ isDark ? 'Light Mode' : 'Dark Mode' }}</span>
           <PhSun v-if="isDark" :size="24"/>
-          <PhMoonStars v-else :size="24"/>
+          <PhSunHorizon v-else :size="24"/>
         </button>
       </div>
     </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { PhSun, PhMoonStars } from '@phosphor-icons/vue'
+import { PhSun, PhSunHorizon } from '@phosphor-icons/vue'
 
 const STORAGE_KEY = '10years-theme'
 
