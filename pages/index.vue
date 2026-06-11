@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { page } = useContent()
+const { data: page } = await useAsyncData('index', () =>
+  queryCollection('content').path('/').first()
+)
+
+useHead({
+  title: () => page.value?.title
+})
 </script>
 
 <template>
