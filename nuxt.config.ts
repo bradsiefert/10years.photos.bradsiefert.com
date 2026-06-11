@@ -14,8 +14,7 @@ app: {
   },
   modules: ['@nuxt/content'],
   content: {
-    documentDriven: true,
-    markdown: {
+    renderer: {
       anchorLinks: false
     }
   },
@@ -23,6 +22,13 @@ app: {
     '@/assets/scss/app.scss'
     // Needed to install sass and bootstrap to make this work.
   ],
+  nitro: {
+    preset: 'netlify-static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/tableofcontents']
+    }
+  },
   vite: {
     css: {
       preprocessorOptions: {
