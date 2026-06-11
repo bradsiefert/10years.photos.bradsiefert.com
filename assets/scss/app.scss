@@ -52,6 +52,10 @@ $btn-border-radius-sm:              2px !default;
   opacity: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'T-Pro';
   font-weight: 400;
@@ -211,6 +215,11 @@ footer .nav-link:hover {
 }
 
 /* ---------- Photo Pages --------- */
+.image-post {
+  width: fit-content;
+  max-width: 100%;
+}
+
 .photo img {
   max-height: calc(100vh - 240px);
   display: block;
@@ -221,6 +230,7 @@ footer .nav-link:hover {
 }
 
 .details {
+  width: 100%;
   font-family: 'SFM';
   font-size: 0.875rem;
   margin-top: 8px;

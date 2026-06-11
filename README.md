@@ -1,9 +1,9 @@
 # 10years.photos.bradsiefert.com Site Setup
-A personal photo project site built with **Nuxt 3** and **Nuxt Content**, presenting a curated collection of 70 photos organized into Places, People, and Instant Film, with about and endnotes sections.
+A personal photo project site built with **Nuxt 4** and **Nuxt Content**, presenting a curated collection of 70 photos organized into Places, People, and Instant Film, with about and endnotes sections.
 
 ## Tech stack
-- **Nuxt 3** – Vue-based framework
-- **@nuxt/content** – Document-driven content (Markdown) with `documentDriven: true`
+- **Nuxt 4** – Vue-based framework
+- **@nuxt/content** – Content collections (Markdown) with catch-all routing and `queryCollection`
 - **Bootstrap 5** – Layout and components (via SCSS)
 - **Sass** – Styles (`assets/scss/`: `app.scss`, `darkmode.scss`, `fontfaces.scss`)
 - **Phosphor Icons** – Icon set
@@ -13,9 +13,9 @@ A personal photo project site built with **Nuxt 3** and **Nuxt Content**, presen
 | Path | Purpose |
 |------|--------|
 | `content/` | Markdown content: index, table of contents, about, places (1–37), people (38–61), instant film (62–79), endnotes |
-| `components/` | Vue components: `navbar`, `footie`, and content components (`cover`, `toc`, `aboutme`) |
-| `layouts/` | `image-post.vue`, `text-post.vue` for content pages |
-| `pages/` | `index.vue` (content-driven), `tableofcontents.vue` |
+| `components/` | Vue components: `navbar`, `footie`, `image-post`, `text-post`, and content components (`cover`, `toc`, `aboutme`) |
+| `pages/` | `index.vue`, `tableofcontents.vue`, `[...slug].vue` catch-all for content pages |
+| `content.config.ts` | Content collection schema and source configuration |
 | `public/photos/` | Optimized images (places, people, instantfilm) |
 | `10yearfullres/` | Full-resolution source images (70 + aboutme, day1) |
 | `assets/` | Fonts, SCSS, images |

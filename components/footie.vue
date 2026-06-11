@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand" aria-label="Page navigation">
       <div class="container">
         <div class="float-start">
-          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="prev" :to="prev._path" :aria-label="'Previous: ' + prev.title">
+          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="prev" :to="prev.path" :aria-label="'Previous: ' + prev.title">
             <PhArrowLeft :size="24" />
             Prev
           </NuxtLink>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="float-end">
-          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="next" :to="next._path" :aria-label="'Next: ' + next.title">
+          <NuxtLink class="nav-link d-flex align-items-center gap-2" v-if="next" :to="next.path" :aria-label="'Next: ' + next.title">
             Next
             <PhArrowRight :size="24" />
           </NuxtLink>
@@ -30,7 +30,18 @@
 
 <script setup lang="ts">
 import { PhArrowLeft, PhArrowRight, PhImages } from '@phosphor-icons/vue'
-const { prev, next } = useContent()
+
+const route = useRoute()
+const { data: surround } = await useAsyncData(
+  () => `surround-${route.path}`,
+  () =>
+    queryCollectionItemSurroundings('content', route.path, { fields: ['title', 'path'] })
+      .order('stem', 'ASC'),
+  { watch: [() => route.path] }
+)
+
+const prev = computed(() => surround.value?.[0])
+const next = computed(() => surround.value?.[1])
 
 function isInputFocused() {
   if (import.meta.server) return true
@@ -44,9 +55,9 @@ function isInputFocused() {
 function handleKeydown(e: KeyboardEvent) {
   if (isInputFocused()) return
   if (e.key === 'ArrowLeft' && prev.value) {
-    navigateTo(prev.value._path)
+    navigateTo(prev.value.path)
   } else if (e.key === 'ArrowRight' && next.value) {
-    navigateTo(next.value._path)
+    navigateTo(next.value.path)
   }
 }
 
