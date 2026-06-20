@@ -9,6 +9,7 @@
                 src="/aboutme.jpg"
                 class="img-fluid mb-5"
                 alt="Brad Siefert self portrait"
+                width="600"
               />
             </div>
             <div class="col-md-12 col-lg-9">

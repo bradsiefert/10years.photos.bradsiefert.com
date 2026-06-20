@@ -15,6 +15,8 @@ defineProps<{
       <NuxtImg
         :src="normalizeImageSrc(doc.image?.src ?? '')"
         :alt="doc.image?.alt ?? doc.title"
+        width="1000"
+        sizes="(max-width: 1000px) 100vw, 1000px"
       />
     </div>
     <div class="details">
