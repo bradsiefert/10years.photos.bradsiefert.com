@@ -12,7 +12,10 @@ defineProps<{
   <div class="image-post">
     <ContentRenderer :value="doc" />
     <div class="photo">
-      <img :src="'' + doc.image?.src" :alt="doc.title">
+      <NuxtImg
+        :src="normalizeImageSrc(doc.image?.src ?? '')"
+        :alt="doc.image?.alt ?? doc.title"
+      />
     </div>
     <div class="details">
       <div class="container-fluid">

@@ -5,11 +5,11 @@
         <div class="text-block">
           <div class="row">
             <div class="col-sm-7 col-md-4 col-lg-3 ms-auto me-auto">
-              <img
+              <NuxtImg
                 src="/aboutme.jpg"
                 class="img-fluid mb-5"
                 alt="Brad Siefert self portrait"
-              >
+              />
             </div>
             <div class="col-md-12 col-lg-9">
               <h1>About Me</h1>

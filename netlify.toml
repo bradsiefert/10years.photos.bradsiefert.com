@@ -1,3 +1,7 @@
 [build]
   command = "npm run generate"
   publish = "dist"
+
+[build.environment]
+  # Use Netlify Image CDN provider for production builds
+  NUXT_IMAGE_PROVIDER = "netlify"
