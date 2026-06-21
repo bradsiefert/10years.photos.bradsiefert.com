@@ -216,18 +216,17 @@ footer .nav-link:hover {
 
 /* ---------- Photo Pages --------- */
 .image-post {
-  width: 100%;
-  max-width: 1000px;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .photo img {
   max-height: calc(100vh - 240px);
   display: block;
   max-width: 100%;
-  width: 100%;
-  height: auto;
   margin: 0 auto;
-  object-fit: contain;
+  width: auto;
+  height: auto;
 }
 
 .details {
