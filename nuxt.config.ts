@@ -12,7 +12,12 @@ app: {
       viewport: 'width=device-width, initial-scale=1'
     }
   },
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxt/image'],
+  image: {
+    quality: 81,
+    format: ['avif', 'webp'],
+    provider: process.env.NUXT_IMAGE_PROVIDER || 'ipx'
+  },
   content: {
     renderer: {
       anchorLinks: false
@@ -40,6 +45,9 @@ app: {
           }
         }
       }
+    },
+    ssr: {
+      noExternal: ['ipx']
     }
   }
 })
