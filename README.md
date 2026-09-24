@@ -25,33 +25,33 @@ A personal photo project site built with **Nuxt 4** and **Nuxt Content**, presen
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
 Run the dev server at `http://localhost:3000`:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
 Build for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Preview the production build locally:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 Generate a static site (if using SSG):
 
 ```bash
-npm run generate
+pnpm run generate
 ```
 
 ## Documentation

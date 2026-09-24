@@ -47,7 +47,10 @@ app: {
       }
     },
     ssr: {
-      noExternal: ['ipx']
+      noExternal: ['ipx', '@phosphor-icons/vue']
+    },
+    resolve: {
+      dedupe: ['vue']
     }
   }
 })
